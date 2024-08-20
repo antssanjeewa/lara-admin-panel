@@ -1,6 +1,6 @@
 # Laravel File and Media Handling Package
 
-# My Package Name
+# Lara Admin Panel
 
 A custom Composer package for Laravel that includes a default user migration, model, and controller. This package helps streamline the setup of new Laravel projects by providing these common components out of the box.
 
@@ -9,7 +9,7 @@ A custom Composer package for Laravel that includes a default user migration, mo
 To install the package, use Composer:
 
 ```bash
-composer require vendor/my-package-name
+composer require antssanjeewa/lara-admin-panel
 ```
 
 Add the private repository in your 'composer.json` file.
@@ -18,18 +18,15 @@ Add the private repository in your 'composer.json` file.
 "repositories": [
     {
         "type":"vcs",
-        "url":"git@bitbucket.org:elegantmedia/laravel-media-manager.git"
+        "url":"git@github.com:antssanjeewa/lara-admin-panel.git"
     }
 ]
 ```
 
-Add the repository to the required list on composer.json
-`composer require emedia/laravel-media-manager`
-
 ## Publish Configuration files
 
 ```
-php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+php artisan vendor:publish --provider="Antssanjeewa\LaraAdminPanel\AdminPanelServiceProvider"
 ```
 
 ## Usage
